@@ -1,3 +1,74 @@
+<#
+.SYNOPSIS
+	Retrieves chat data from an API or generates test data and exports it to a CSV file.
+
+.DESCRIPTION
+	The Get-ChatCSV function retrieves chat data from a specified API endpoint or generates test data when the API is unavailable. 
+	It processes the data, formats it according to requirements, and can either return it as PowerShell objects or export it to a CSV file.
+	
+	The function handles authentication using credentials from environment variables, processes the API response,
+	and applies formatting to ensure consistency in the output.
+
+.PARAMETER Url
+	The URL of the API endpoint to fetch chat data from.
+	Default: 'https://proto.notso.ai/jumbo/chats'
+
+.PARAMETER OutputFolder
+	The folder where the CSV output file will be saved.
+	Default: '.\outputs'
+
+.PARAMETER OutputFile
+	The filename for the CSV output.
+	Default: 'chats.csv'
+
+.PARAMETER CsvHeader
+	The header string to use for the CSV file.
+	Default: 'session_id,start_time,end_time,ip_address,country,language,messages_sent,sentiment,escalated,forwarded_hr,full_transcript,avg_response_time,tokens,tokens_eur,category,initial_msg,user_rating'
+
+.PARAMETER ReturnType
+	Specifies the return type of the function.
+	Valid values: 'CSV', 'PSObject'
+	Default: 'CSV'
+
+.PARAMETER EnvFilePath
+	Path to the .env file containing authentication credentials.
+	Default: '.env'
+
+.PARAMETER DebugMode
+	When specified, enables additional debug output during execution.
+
+.PARAMETER TestMode
+	When specified, uses test data instead of calling the API.
+
+.PARAMETER ForceTestMode
+	When specified, forces the use of test data even if API credentials are available.
+
+.EXAMPLE
+	Get-ChatCSV
+	Retrieves chat data from the default API URL and saves it to '.\outputs\chats.csv'.
+
+.EXAMPLE
+	Get-ChatCSV -ReturnType PSObject
+	Retrieves chat data and returns it as PowerShell objects instead of saving to CSV.
+
+.EXAMPLE
+	Get-ChatCSV -TestMode -OutputFile 'test_chats.csv'
+	Generates test data and saves it to '.\outputs\test_chats.csv'.
+
+.EXAMPLE
+	Get-ChatCSV -Url 'https://myapi.example.com/chats' -EnvFilePath 'production.env'
+	Retrieves chat data from a custom API URL using credentials from 'production.env'.
+
+.NOTES
+	Requires the Import-Environment function to load environment variables from the .env file.
+	Authentication uses Basic Auth with username and password from environment variables.
+	If API access fails, test data will be used instead.
+
+.OUTPUTS
+	When ReturnType is 'CSV': The path to the created CSV file.
+	When ReturnType is 'PSObject': An array of PSCustomObjects containing the processed chat data.
+	If an error occurs and TestMode is not enabled: $false
+#>
 function Get-ChatCSV {
 	[CmdletBinding()]
 	param (

@@ -1,3 +1,42 @@
+<#
+.SYNOPSIS
+	Imports environment variables from a .env file into the current session.
+
+.DESCRIPTION
+	The Import-Environment function reads a .env file and sets environment variables
+	based on the key-value pairs defined in the file. It handles both relative and
+	absolute file paths and searches in multiple common locations when a relative
+	path is provided.
+
+.PARAMETER FilePath
+	Specifies the path to the .env file. Can be absolute or relative.
+	Default value is '.env'.
+
+.EXAMPLE
+	Import-Environment
+	# Searches for a .env file in common locations and imports variables
+
+.EXAMPLE
+	Import-Environment -FilePath "config/.env.development"
+	# Imports environment variables from config/.env.development
+
+.EXAMPLE
+	Import-Environment -Verbose
+	# Shows detailed information about which .env file is being loaded
+
+.NOTES
+	The function attempts to find the .env file in the following locations when a relative path is provided:
+	- Current directory
+	- Workspace root (if current directory is "outputs")
+	- Module directory
+	- Script directory (if called from a script)
+	- Parent directory of the module
+	- Two levels up from the module directory
+
+.OUTPUTS
+	[System.Boolean]
+	Returns $true if the environment variables were successfully loaded, $false otherwise.
+#>
 function Import-Environment {
     [CmdletBinding()]
     param (

@@ -64,26 +64,10 @@ Get-ChatCSV -OutputFolder "outputs" -OutputFile "chats.csv"
 Get-Transcripts -CsvPath "outputs/chats.csv" -OutputFolder "outputs/transcripts"
 
 # Parse chat transcripts and extract structured data
-Parse-Chats -Directory "outputs/transcripts" -OutputDirectory "outputs/parsed" -SaveToFile -OutputFormat "JSON"
+ConvertFrom-ChatTranscript -Directory "outputs/transcripts" -OutputDirectory "outputs/parsed" -SaveToFile -OutputFormat "JSON"
 
 # Do it all in one step (download + parse into a single combined file)
 Get-CombinedChats -OutputFileName "all_chats" -OutputFormat "JSON"
-```
-
-### Using the Wrapper Scripts
-
-```powershell
-# Get chat data from API and save to CSV
-Get-CSV.ps1
-
-# Download chat transcripts from URLs in the CSV
-Download-Chats.ps1
-
-# Parse chat transcripts and extract structured data
-Parse-Chats.ps1 -SaveToFile -OutputFormat "JSON"
-
-# Do it all in one step (download + parse into a single combined file)
-Get-CombinedChats.ps1 -OutputFileName "all_chats"
 ```
 
 ## Functions
@@ -122,12 +106,12 @@ Parameters:
 - `Force`: Force re-download of existing files
 - `EnvFilePath`: Path to the .env file with credentials
 
-### Parse-Chats
+### ConvertFrom-ChatTranscript
 
 Parses chat transcript files to extract structured message data.
 
 ```powershell
-Parse-Chats -Directory "outputs/transcripts" -OutputDirectory "outputs/parsed" -SaveToFile -OutputFormat "JSON" -CombinedOnly
+ConvertFrom-ChatTranscript -Directory "outputs/transcripts" -OutputDirectory "outputs/parsed" -SaveToFile -OutputFormat "JSON" -CombinedOnly
 ```
 
 Parameters:

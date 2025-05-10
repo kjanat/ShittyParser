@@ -1,3 +1,47 @@
+<#
+.SYNOPSIS
+Downloads transcripts from chat session URLs stored in a CSV file.
+
+.DESCRIPTION
+The Get-Transcripts function retrieves chat transcripts from URLs specified in a CSV file. 
+It authenticates using credentials stored as environment variables, downloads the transcripts, 
+and saves them to a specified output folder.
+
+.PARAMETER CsvPath
+Specifies the path to the CSV file containing chat information with transcript URLs.
+Default value is '.\outputs\chats.csv'.
+
+.PARAMETER OutputFolder
+Specifies the directory where downloaded transcripts should be saved.
+Default value is '.\outputs\transcripts'.
+
+.PARAMETER Force
+A switch parameter that, when specified, forces re-downloading of transcripts even if they already exist.
+
+.PARAMETER EnvFilePath
+Specifies the path to the .env file containing environment variables for authentication.
+Default value is '.\.env'.
+
+.EXAMPLE
+Get-Transcripts
+# Downloads all transcripts from the default CSV file to the default output folder
+
+.EXAMPLE
+Get-Transcripts -CsvPath "C:\data\my-chats.csv" -OutputFolder "C:\data\my-transcripts"
+# Downloads transcripts using a custom CSV file and saves to a custom folder
+
+.EXAMPLE
+Get-Transcripts -Force
+# Downloads all transcripts, overwriting any existing files
+
+.NOTES
+Requires environment variables USERNAME and PASSWORD to be set or included in the .env file.
+The CSV file must contain columns 'session_id' and 'full_transcript' at minimum.
+
+.OUTPUTS
+[Boolean]
+Returns $true if the operation completes successfully, or $false if an error occurs.
+#>
 function Get-Transcripts {
 	[CmdletBinding()]
 	param (

@@ -9,7 +9,7 @@ on:
       - "**.psd1"
       - ".github/workflows/autofix.yml"
   pull_request:
-    # branches: [master]
+    branches: [master]
     paths:
       - "**.ps1"
       - "**.psm1"

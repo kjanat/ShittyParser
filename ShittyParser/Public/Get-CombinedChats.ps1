@@ -1,3 +1,60 @@
+<#
+.SYNOPSIS
+	Combines and processes chat transcripts from multiple sources.
+
+.DESCRIPTION
+	The Get-CombinedChats function downloads chat transcripts from sources specified in a CSV file,
+	parses them into a unified format, and saves the combined result to a file.
+	It can output in JSON, CSV, or PS1 formats.
+
+.PARAMETER CsvPath
+	The path to the CSV file containing chat source information.
+	Default is '.\outputs\chats.csv'.
+
+.PARAMETER OutputFolder
+	The folder where individual chat transcripts will be downloaded.
+	Default is '.\outputs\transcripts'.
+
+.PARAMETER ParsedOutputFolder
+	The folder where the combined parsed output will be saved.
+	Default is '.\outputs\parsed'.
+
+.PARAMETER OutputFormat
+	The format for the output file. Valid options are 'JSON', 'CSV', or 'PS1'.
+	Default is 'JSON'.
+
+.PARAMETER OutputFileName
+	Optional custom name for the output file (without extension).
+	If not specified, a default name with timestamp will be used.
+
+.PARAMETER Force
+	If specified, overwrites existing transcript files during download.
+
+.PARAMETER EnvFilePath
+	The path to the environment file containing necessary credentials and settings.
+	Default is '.\.env'. Must be a valid file path.
+
+.PARAMETER SkipDownload
+	If specified, skips the download process and only parses existing transcript files.
+
+.EXAMPLE
+	Get-CombinedChats -OutputFormat JSON -OutputFileName "my_chats"
+
+	Downloads transcripts from sources in the default CSV file and combines them into
+	a single JSON file named my_chats.json in the default parsed output folder.
+
+.EXAMPLE
+	Get-CombinedChats -CsvPath "C:\Data\sources.csv" -SkipDownload -OutputFormat CSV
+
+	Parses existing transcripts without downloading new ones, and outputs as CSV.
+
+.OUTPUTS
+	System.Object[]
+	Returns an array of parsed chat messages on success, or $false on failure.
+
+.NOTES
+	This function depends on Import-Environment, Get-Transcripts, and ConvertFrom-ChatTranscript functions.
+#>
 function Get-CombinedChats {
 	[CmdletBinding()]
 	param (
