@@ -1,0 +1,121 @@
+User: Ja slaapkop
+Assistant: Haha, ik ben weer helemaal wakker nu! ☀️ Wat kan ik je helpen vandaag?
+
+User: Ik ben nieuw, ik heb nog geen contract gehad
+Assistant: Wat leuk dat je bij Jumbo gaat werken! 🎉 Laten we samen stap voor stap jouw onboarding doorlopen. Waar ga je werken?
+
+User: Bij de jumbo
+Assistant: Top! Laten we beginnen met de eerste documenten die je moet invullen! 📋
+
+User: ja
+Assistant: Super! Hier is jouw sollicitatieformulier: <a href="https://drive.google.com/file/d/1tP_0iST2Abs5SftZOsQVupsYUdNryG95/view?usp=sharing" target="_blank">Sollicitatieformulier</a> 😊 Laat maar weten als je dit formulier hebt ingevuld ✅. Dan gaan we verder met de volgende stap!
+
+User: Weet je dit zeker? Dit heb ik al gedaan en ik ben al op gesprek geweest en aangenomen
+Assistant: Dat is geweldig om te horen! 🎉 Dan laten we de sollicitatie stap achterwege. Heb je al informatie ontvangen over het loonbelastingformulier? Dat is de volgende stap! 😊
+
+User: Ja
+Assistant: Fantastisch! Hier is het loonbelastingformulier: <a href="https://drive.google.com/file/d/1Kk_NbVMAVX-pPJEWKbyZUS0n2OlypEaA/view?usp=sharing" target="_blank">Loonbelastingformulier</a> 😊 Heb je dit formulier ook ingevuld? ✅
+
+User: Ik zei toch dat ik die al had ingevuld?
+Assistant: Oeps, mijn excuses! 🙈 Goed dat je het al hebt gedaan! Laten we verder gaan. Heb je al het formulier voor instemming werken op zondag ingevuld? 😊
+
+User: Ja
+Assistant: Geweldig! 🎉 Hier is het bedrijfsreglement dat je goed moet doorlezen: <a href="https://drive.google.com/file/d/1ownmU5ZJ8yT4a_fRk4kAPUH9zM7zYdVW/view?usp=sharing" target="_blank">Bedrijfsreglement</a>. Laat me weten als je het reglement gelezen hebt! ✅
+
+User: Gelezen
+Assistant: Fantastisch! 🎉 Je bent klaar met de documenten. Vergeet niet om alle ingevulde formulieren te mailen naar: hr@jumbobasbobeldijk.nl. Heel veel succes bij je start bij Jumbo! 💛 Heb je nog andere vragen? 😊
+
+User: Ja, dit heb ik dus allemaal al gedaan maar ik heb mijn contract nog niet ontvangen
+Assistant: Dat weet ik eerlijk gezegd niet precies! Je kunt het beste even mailen naar Marieke van HR: hr@jumbobasbobeldijk.nl ✉️. Zullen we weer verdergaan waar we gebleven waren? 😊
+
+User: Ja
+Assistant: Super! Als je nog meer vragen hebt of hulp nodig hebt, laat het gerust weten. 😊 Wat kan ik nu voor je doen?
+
+User: Verder gaan
+Assistant: Laten we verder gaan! Heb je nog iets specifieks in gedachten waar ik je mee kan helpen? 😊
+
+User: Hoe weet ik wanneer ik nou moet werken?
+Assistant: Je kunt je rooster bekijken via de PMT-app! 📅 In de app zie je jouw werkuren en beschikbaarheid. Heb je de app al gedownload? 😊
+
+User: Nee
+Assistant: Geen probleem! 😊 Je kunt de PMT-app downloaden via deze link: <a href="https://jumbo6348.personeelstool.com" target="_blank">PMT-app</a>. Zodra je de app hebt geïnstalleerd, kun je jouw rooster bekijken. Laat het me weten als je dit hebt gedaan! 👌
+
+User: Ja gedaan
+Assistant: Super! 🎉 Nu kun je je rooster bekijken in de PMT-app. Heb je nog andere vragen of kan ik je met iets anders helpen? 😊
+
+User: Ja wat wordt mijn salaris?
+Assistant: Je salaris wordt iedere 4 weken uitbetaald. Het bedrag kan verschillen afhankelijk van je uren en contract. Je kunt je loonstrook openen in de PMT-app. Heb je al toegang tot je loonstrook? 😊
+
+User: Nee want ik heb niet gewerkt
+Assistant: Dat begrijp ik! 😊 In dat geval moet je even wachten tot je daadwerkelijk hebt gewerkt, dan krijg je je eerste salaris. Heb je nog andere vragen of is er iets anders waar ik je mee kan helpen?
+
+User: Ja maar ik wil eerst weten wat ik ga verdienen
+Assistant: Je uurloon staat in je contract, dat is het bedrag dat je per uur verdient. Bij flexibele uren bestaat je salaris uit een basisbedrag plus toeslagen. Als je je contract nog niet hebt ontvangen, kan Marieke van HR je hier het beste over informeren: hr@jumbobasbobeldijk.nl. Heb je daar nog vragen over? 😊
+
+User: Wie is mijn leidinggevende?
+Assistant: Je leidinggevende kun je vinden in het organogram dat je ontvangen hebt in je welkomstmap. Als je die niet hebt, kun je het beste even vragen aan een collega. 😊 Werk je in Nieuwkoop of Buitenveldert? Dan kan ik je misschien specifieke namen geven!
+
+User: Ik heb nog niet gewerkt dus ik heb nog geen welkomsmap
+Assistant: Oh, dat begrijp ik! Geen probleem. 😊 Als je nog geen welkomsmap hebt, is de manager van je winkel meestal de leidinggevende die je kan helpen. In Nieuwkoop bijvoorbeeld, is Bas de ondernemer. In Buitenveldert is dat ook Bas. Heb je nog andere vragen waar ik mee kan helpen?
+
+User: Dit klopt niet
+Assistant: Mijn excuses als ik het verkeerd had! 🙈 Dat kan verwarrend zijn. Het beste is om contact op te nemen met Marieke van HR. Ze kan je alles vertellen over je leidinggevende en welkomsmap. Je kunt haar bereiken via hr@jumbobasbobeldijk.nl. Heb je nog andere vragen? 😊
+
+User: Ja wie is mijn leidinggevende van dkw
+Assistant: Als je in de DKW (Deelgenoten Klantenservice) werkt, is Dennis of Danny je assistent teamleiders. 😊 Zij kunnen je verder helpen! Heb je nog meer vragen?
+
+User: Maar ik werk in nieuwkoop
+Assistant: Ah, in Nieuwkoop! 😄 Dan is Thomas de assistent teamleider voor DKW. Hij kan je zeker verder helpen! Heb je nog meer vragen of kan ik je met iets anders helpen? 😊
+
+User: Ja hoe kan ik hem bereiken?
+Assistant: Je kunt Thomas bereiken via de winkel zelf! 😊 Vraag gewoon aan een collega waar je hem kunt vinden, of loop even naar de DKW-afdeling. Hij helpt je graag verder! Heb je nog andere vragen?
+
+User: Ja maar ik weet niet wie hij is, ik heb hem nog nooit gezien
+Assistant: Dat is begrijpelijk! 😅 Je kunt misschien aan een collega vragen om hem voor je te introduceren. Ook kan je een kijkje nemen in de winkel bij de DKW-afdeling, daar is hij vaak te vinden. Als je hem gezien hebt, kan ik je helpen om verder te gaan! Heb je nog andere vragen? 😊
+
+User: Wat is het wachtwoord van mijn loonstrook?
+Assistant: Het wachtwoord voor je loonstrook is de eerste 2 hoofdletters van je achternaam plus je geboortedatum. Bijvoorbeeld, als je naam Jan Jansen is en je bent geboren op 2 januari 2000, dan zou het wachtwoord JA0201 zijn. 😊 Heb je nog meer vragen?
+
+User: Wat moet ik aan op mijn eerste werktdag?
+Assistant: Op je eerste werkdag draag je bedrijfskleding. Dit betekent een donkere spijkerbroek of zwarte broek en een wit T-shirt. Vergeet ook niet je haar vast te dragen! 😊 Heb je nog vragen over je eerste werkdag?
+
+User: Wanneer kan ik beginnen?
+Assistant: Je kunt beginnen zodra je je contract hebt ontvangen en alle onboarding-documenten zijn ingevuld. Het is het beste om dit even met Marieke van HR te bespreken via hr@jumbobasbobeldijk.nl. Dan weet je precies wanneer je kunt starten! 😊 Heb je nog andere vragen?
+
+User: Ik ben ziek
+Assistant: Oh nee, dat is vervelend om te horen! 😟 Vergeet niet om je ziek te melden vóór 08:00 uur telefonisch. Als je in Nieuwkoop werkt, bel dan 0172-573555. Voor Buitenveldert is dat 020-3019160. Zorg goed voor jezelf! Heb je nog andere vragen?
+
+User: Oke maar het is nu 15.00 uur
+Assistant: Ik begrijp het, dat kan lastig zijn! 😟 Het is belangrijk om je ziek te melden, ook al is het na 08:00 uur. Neem contact op met je leidinggevende om het te laten weten. Je kunt dit ook per e-mail doen. Zorg ervoor dat je goed voor jezelf zorgt! Heb je nog andere vragen? 😊
+
+User: Mijn kloksleutel doet het niet meer
+Assistant: Oh nee, dat is vervelend! 😟 Meld dit direct bij je leidinggevende. Je kunt ook een nieuwe kloksleutel aanvragen via e-mail naar thijs@jumbobasbobeldijk.nl. Vergeet niet dat er €5,- kosten aan verbonden zijn. Heb je nog andere vragen? 😊
+
+User: Hij is toch kwijt
+Assistant: Als je kloksleutel kwijt is, is het belangrijk om dit meteen te melden bij je leidinggevende. 😊 Je moet ook een nieuwe kloksleutel aanvragen via e-mail naar thijs@jumbobasbobeldijk.nl. Er zijn kosten van €5,- voor een nieuwe. Zorg ervoor dat je dit snel regelt! Heb je nog andere vragen?
+
+User: Ik ben vergeten te klokken
+Assistant: Dat kan gebeuren! 😅 Vergeet niet om dit direct te melden bij je leidinggevende. Je kunt ook je gewerkte uren en pauze via een appje doorgeven. Zorg ervoor dat je dit zo snel mogelijk doet, en je kunt maximaal 2 keer per jaar een correctie aanvragen. Heb je nog meer vragen? 😊
+
+User: Mijn kleding is kapot
+Assistant: Oh, dat is vervelend! 😟 Zorg ervoor dat je dit meldt bij je leidinggevende. Afhankelijk van de situatie kan je nieuwe bedrijfskleding aanvragen. Er zijn kosten verbonden aan ontbrekende of beschadigde kleding, dus het is goed om dit snel te regelen. Heb je verder nog vragen? 😊
+
+User: Wanneer krijg ik uitbetaald?
+Assistant: Je salaris wordt elke 4 weken uitbetaald, op vrijdag. 😊 De uitbetalingsweken in 2025 zijn specifiek vastgesteld. Heb je je salarisstrook al bekeken? Daar kun je ook de details terugvinden. Heb je nog meer vragen?
+
+User: Ik heb nog niet gewerkt, wanneer zijn de uitbetalingswerken?
+Assistant: De uitbetalingsweken voor 2025 zijn als volgt:
+
+- P4: Week 17
+- P5: Week 21
+- P6: Week 25
+- P7: Week 29
+- P8: Week 33
+- P9: Week 37
+- P10: Week 41
+- P11: Week 45
+- P12: Week 49
+- P13: Week 1 van 2026
+
+Je ontvangt je salaris dus na je eerste werkperiode. 😊 Heb je nog andere vragen?
+
