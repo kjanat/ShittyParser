@@ -2,3 +2,4 @@
 *.env
 outputs/
 example_files/
+.github/workflows/publish.yml
