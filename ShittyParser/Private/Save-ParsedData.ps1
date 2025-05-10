@@ -3,20 +3,20 @@ function Save-ParsedData {
 	param (
 		[Parameter(Mandatory = $true)]
 		[array]$Messages,
-
+        
 		[Parameter(Mandatory = $true)]
 		[string]$FilePath,
-
+        
 		[Parameter(Mandatory = $true)]
 		[ValidateSet('JSON', 'CSV', 'PS1')]
 		[string]$Format
 	)
-
+    
 	# Create the output directory if it doesn't exist
 	if (-not (Test-Path -Path (Split-Path -Path $FilePath -Parent))) {
 		New-Item -ItemType Directory -Path (Split-Path -Path $FilePath -Parent) -Force | Out-Null
 	}
-
+    
 	switch ($Format.ToUpper()) {
 		'JSON' {
 			$Messages | ConvertTo-Json -Depth 10 | Set-Content -Path $FilePath
@@ -46,6 +46,6 @@ function Save-ParsedData {
 			return $false
 		}
 	}
-
+    
 	return $true
 }

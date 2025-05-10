@@ -3,24 +3,23 @@ function Get-Transcripts {
 	param (
 		[Parameter(Mandatory = $false)]
 		[string]$CsvPath = '.\outputs\chats.csv',
-
+        
 		[Parameter(Mandatory = $false)]
 		[string]$OutputFolder = '.\outputs\transcripts',
-
+        
 		[Parameter(Mandatory = $false)]
 		[switch]$Force,
-
+        
 		[Parameter(Mandatory = $false)]
-		[ValidateScript({ Test-Path $_ -PathType Leaf })]
 		[string]$EnvFilePath = '.\.env'
 	)
-
+    
 	# Load environment variables
 	if (-not (Import-Environment -FilePath $EnvFilePath)) {
 		Write-Error 'Failed to load environment variables.'
 		return $false
 	}
-
+    
 	# Check if CSV file exists
 	if (-not (Test-Path $CsvPath)) {
 		Write-Error "CSV file not found at path: $CsvPath"
@@ -72,35 +71,35 @@ function Get-Transcripts {
 	# Process each chat entry
 	for ($i = 0; $i -lt $chats.Count; $i++) {
 		$chat = $chats[$i]
-
+        
 		# Update progress
 		$progressParams.PercentComplete = ($i / $total * 100)
 		$progressParams.Status = "Processing $($i+1) of $total"
 		Write-Progress @progressParams
-
+        
 		# Get the transcript URL
 		$transcriptUrl = $chat.full_transcript
-
+        
 		# Skip if URL is empty
 		if ([string]::IsNullOrEmpty($transcriptUrl)) {
 			Write-Verbose "Skipping entry with session ID $($chat.session_id) - No transcript URL"
 			$skipped++
 			continue
 		}
-
+        
 		# Extract filename from URL
 		$fileName = $transcriptUrl.Split('/')[-1]
 		$outputPath = Join-Path -Path $OutputFolder -ChildPath $fileName
-
+        
 		# Skip if file exists and not forcing download
 		if ((Test-Path $outputPath) -and -not $Force) {
 			Write-Verbose "Skipping $fileName - File already exists (use -Force to override)"
 			$skipped++
 			continue
 		}
-
+        
 		Write-Host "Downloading transcript for session $($chat.session_id)" -NoNewline
-
+        
 		try {
 			# Download the transcript
 			Invoke-RestMethod -Uri $transcriptUrl -Headers $authHeader -OutFile $outputPath
@@ -123,6 +122,6 @@ function Get-Transcripts {
 	Write-Host "Successfully downloaded: $downloaded" -ForegroundColor Green
 	Write-Host "Skipped (already exists or no URL): $skipped" -ForegroundColor Yellow
 	Write-Host "Failed downloads: $failed" -ForegroundColor Red
-
+    
 	return $true
 }
