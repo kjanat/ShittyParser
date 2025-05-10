@@ -1,3 +1,4 @@
 .env
 *.env
 outputs/
+.github/workflows/publish.yml
