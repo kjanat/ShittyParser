@@ -34,13 +34,20 @@ Import-Module ./ShittyParser
 
 ## Configuration
 
-Create a `.env` file in the root directory with your API credentials:
+Create a .env file in the root directory with your API credentials:
 
 ```sh
-username=yourusername
-password=yourpassword
-url=https://<host>/<customer>/chats
+USERNAME=yourusername
+PASSWORD=yourpassword
+URL=https://<host>/<customer>/chats
 ```
+
+The module will search for the .env file in several locations:
+
+- Current directory
+- Root of the project
+- Parent directory of the module
+- Two levels up from the module directory
 
 ## Usage
 
@@ -94,8 +101,11 @@ Parameters:
 - `Url`: API endpoint URL
 - `OutputFolder`: Folder where the CSV file will be saved
 - `OutputFile`: Name of the CSV file
+- `CsvHeader`: Header string for the CSV (if API returns headerless data)
 - `ReturnType`: Format to return data ("CSV" or "PSObject")
 - `EnvFilePath`: Path to the .env file with credentials
+- `DebugMode`: Enable detailed diagnostic information
+- `TestMode`: Use test data instead of making API calls
 
 ### Get-Transcripts
 
@@ -160,18 +170,27 @@ The module supports three output formats:
 
 ```json
 [
-  {
-    "SessionId": "a49e5186-f5b5-4ded-99a6-d6b3a06fd610",
-    "Speaker": "User",
-    "Message": "Ja slaapkop"
-  },
-  {
-    "SessionId": "a49e5186-f5b5-4ded-99a6-d6b3a06fd610",
-    "Speaker": "Assistant",
-    "Message": "Haha, ik ben weer helemaal wakker nu! ☀️ Wat kan ik je helpen vandaag?"
-  }
+    {
+        "SessionId": "a49e5186-f5b5-4ded-99a6-d6b3a06fd610",
+        "Speaker": "User",
+        "Message": "Ja slaapkop"
+    },
+    {
+        "SessionId": "a49e5186-f5b5-4ded-99a6-d6b3a06fd610",
+        "Speaker": "Assistant",
+        "Message": "Haha, ik ben weer helemaal wakker nu! ☀️ Wat kan ik je helpen vandaag?"
+    }
 ]
 ```
+
+## Troubleshooting
+
+If you encounter issues with the module:
+
+1. **API Credentials**: Ensure your .env file exists and contains the correct credentials
+2. **CSV Headers**: The module automatically adds headers to CSV data if necessary
+3. **Debug Mode**: Use the `-DebugMode` switch to see detailed diagnostic information
+4. **Test Mode**: Use the `-TestMode` switch to generate test data without making API calls
 
 ## License
 
